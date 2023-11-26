@@ -20,7 +20,7 @@ class TurmaState extends State<Turma> {
     final Random random = Random();
 
     return Container(
-      // constole de forma dos widgets Turma e de espaçamento em relação a tela
+      // controle de forma dos widgets Turma e de espaçamento em relação a tela
       padding: const EdgeInsets.symmetric(horizontal: 20),
       margin: const EdgeInsets.only(bottom: 5),
       child: ClipRRect(
@@ -55,9 +55,7 @@ class TurmaState extends State<Turma> {
                     '${widget.horaInicio} - ${widget.horaFim}',
                     style: const TextStyle(color: preto),
                   ),
-                  children: const <Widget>[
-                    Expand()
-                  ], // Widget expansivo da turma
+                  children: const <Widget>[Expand()],
                 ),
               )),
         ),

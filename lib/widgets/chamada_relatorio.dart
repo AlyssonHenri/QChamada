@@ -7,9 +7,6 @@ class Expand extends StatefulWidget {
   // Mas depois o objetivo é fazer que todas as parque que usam e semChamdaHoje mudem só
   // depois de obter 1 foto
 
-  // pensando em talvez adicionar um widget temporario para chamada que deram erro de conecção e
-  // ficaram salvas localmente, mas isso é mais pra frente
-
   @override
   _ExpandState createState() => _ExpandState();
 }
@@ -27,8 +24,8 @@ class _ExpandState extends State<Expand> {
               padding: const EdgeInsets.only(left: 20, bottom: 10),
               child: GestureDetector(
                 onTap: () {
-                  // Mudar estado dos widgets
-                  // todo: fazer o botão abrir a camera
+                  // Muda estado dos widgets
+                  // TODO: fazer o botão abrir a camera
                   if (semChamadaHoje) {
                     setState(() {
                       semChamadaHoje = !semChamadaHoje;
