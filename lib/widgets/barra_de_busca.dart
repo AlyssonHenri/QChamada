@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:qChamada/widgets/cores.dart';
 
 class BarraDeBusca extends StatelessWidget {
-  const BarraDeBusca({super.key});
+  final Function(String) aoDigitar;
+
+  const BarraDeBusca(this.aoDigitar, {super.key});
 
   @override
-  Widget build(context) {
+  Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 5),
       child: Column(
@@ -16,7 +18,8 @@ class BarraDeBusca extends StatelessWidget {
               color: Colors.white,
               borderRadius: BorderRadius.circular(20),
             ),
-            child: const TextField(
+            child: TextField(
+              onChanged: aoDigitar,
               decoration: InputDecoration(
                 contentPadding: EdgeInsets.all(0),
                 prefixIcon: Icon(

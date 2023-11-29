@@ -23,7 +23,7 @@ class CheckApp extends StatelessWidget {
 }
 
 // TODO: Alysson
-// - Implementar o sistema de busca de turmas
-// - Visuais da tela de turmas (tá bem feio por agora)
+// - Implementar popup do perfil professor
 // - Implementar acesso a camera e armazenamento adequado da foto
 // - Implementar conversão de foto para link (para futura coneção com o back)
+// - Aprimorar visuais (só as cores brutas por agora)
